@@ -17,7 +17,7 @@ export const PokeInfo = ({pokemon}) => {
                         <span>#{pokemon.id}</span>
                     </div>
                     <div className='pokemon__body mt-2 info-division'>
-                        <p className='pokemon__body-desc'>Base experience: <span>{pokemon.baseXp}</span></p>
+                        <p className='pokemon__body-desc'>Base experience: <span>{pokemon.base_experience}</span></p>
                     </div>
                     <div className='pokemon__body mt-2 info-division'>
                         <p className='pokemon__body-desc'>Height: <span>{pokemon.height}</span></p>
