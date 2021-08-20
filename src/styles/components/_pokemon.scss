@@ -41,3 +41,17 @@
     margin-top: 10px;
     margin-right: 10px;
 }
+
+@media screen and (max-width:770px){
+    .pokemon__container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pokemon__info {
+        padding: 0;
+        padding-bottom: 40px;
+        width: 80%;
+    }
+}
