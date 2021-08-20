@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Navbar } from './components/Navbar/Navbar';
+import { Pokedex } from './components/Pokedex/Pokedex';
+import { Pokemon } from './components/Pokemon/Pokemon';
+import { Searchbar } from './components/Searchbar/Searchbar';
+
+export const App = () => {
+
+    const [searching, setSearching] = useState(false);
+    const [pokemon, setPokemon] = useState('');
+
+    return (
+        <div>
+            <Navbar />
+            <Searchbar
+                setSearching={setSearching}
+                searching={searching}
+                setPokemon={setPokemon}
+            />
+            {
+                searching
+                    ? <Pokemon
+                        pokeName={pokemon}
+                        setSearching={setSearching}
+                    />
+                    : <Pokedex />
+            }
+        </div>
+    )
 }
-
-export default App;

@@ -1,0 +1,14 @@
+// Initial settings
+@import "./base/config";
+@import "./base/base";
+
+//Components
+@import "./components/navbar";
+@import "./components/searchbar";
+@import "./components/pokedex";
+@import "./components/pokegrid";
+@import "./components/pokecard";
+@import "./components/pokemon";
+@import "./components/pokemonnotfound";
+@import "./components/loadingwheel";
+@import "./components/btn";

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $light-white;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100vh;
+    width: calc(100vw);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+.mt-5 {
+    margin-top: 2rem;
+}
+
+.btn {
+    background-color: $dark;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 13px 14.5px;
+
+    i {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.info-division {
+    border-top: 1px solid rgba($color: #000000, $alpha: .15);
+}

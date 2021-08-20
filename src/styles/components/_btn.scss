@@ -1,0 +1,15 @@
+
+
+.back-btn {
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: color .2s ease;
+
+    &:hover {
+        background-color: lighten($color: $dark, $amount: 15);
+    }
+}
